@@ -11,6 +11,7 @@ A boilerplate iii script for Monome Grids
 ## TODO
 
 * [ ] Replace all instances of `<script name>` in .vscode/tasks.json with the name of your script.
+* [ ] Update issues link at the bottom of the troubleshooting section to match your repos issue tracker.
 * [ ] Document how to use the script in `manual.md`.
 
 ## Idea Brainstorm
@@ -104,22 +105,20 @@ Here is a [description of device modes](https://github.com/monome/iii?tab=readme
 Error message:
 
 ```shell
-  File "C:\Users\jguza\source\repos\iiiano\.venv\Lib\site-packages\diii\cli.py", line 43, in upload
+  File "C:\Users\<user name>\path\to\repo\iiiano\.venv\Lib\site-packages\diii\cli.py", line 43, in upload
     iii.connect()
-  File "C:\Users\jguza\source\repos\iiiano\.venv\Lib\site-packages\diii\iii.py", line 48, in connect
+  File "C:\Users\<user name>\path\to\repo\iiiano\.venv\Lib\site-packages\diii\iii.py", line 48, in connect
     self.serial = self.find_device()
                   ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jguza\source\repos\iiiano\.venv\Lib\site-packages\diii\iii.py", line 30, in find_device
+  File "C:\Users\<user name>\path\to\repo\iiiano\.venv\Lib\site-packages\diii\iii.py", line 30, in find_device
     portinfo = find_serial_port('USB VID:PID=CAFE:1101')
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\jguza\source\repos\iiiano\.venv\Lib\site-packages\diii\iii.py", line 21, in find_serial_port
+  File "C:\Users\<user name>\path\to\repo\iiiano\.venv\Lib\site-packages\diii\iii.py", line 21, in find_serial_port
     raise DeviceNotFoundError(f"can't find iii device")
 diii.exceptions.DeviceNotFoundError: can't find iii device
 ```
 
 **Solution:** This is likely due to the device not connected to the computer or not being in iii mode. Follow the instructions [here](https://github.com/monome/iii?tab=readme-ov-file#modes) to flip modes.
-
-If you run into a problem that isn't captured in this section, please [submit issues here](https://github.com/JGuzak/iiiano/issues). Make sure to include things like system information and screenshots/logs for the best chance of assistance.
 
 ### Uploading script gets stuck on "-- receiving script" step
 
@@ -129,3 +128,6 @@ Sometimes scripts don't clear properly when attempting to upload new scripts.
 
 * [force clear iii script by following steps outlined in the `iii` docs](https://github.com/monome/iii?tab=readme-ov-file#modes)
 * disconnect/reconnect the device, launch `diii` if it isn't already running, run `^^c` to clear the script
+
+
+If you run into a problem that isn't captured in this section, please [submit issues here](https://github.com/<user name>/<repo name>/issues). Make sure to include things like system information and screenshots/logs for the best chance of assistance.
