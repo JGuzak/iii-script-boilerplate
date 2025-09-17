@@ -10,6 +10,8 @@ A usb midi keyboard iii script for Monome Grids
 
 ## TODO
 
+* [ ] Replace all instances of `<script name>` in .vscode/tasks.json with the name of your script
+
 ## Idea Brainstorm
 
 ## Prerequisites
