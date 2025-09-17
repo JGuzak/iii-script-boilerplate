@@ -1,8 +1,8 @@
 # iii-script-boilerplate
 
-A usb midi keyboard iii script for Monome Grids
+A boilerplate iii script for Monome Grids
 
-![Grid One init view](/images/init_view.png)
+![main image](/images/init_view.png)
 
 ## [User Manual](/manual.md)
 
@@ -10,7 +10,8 @@ A usb midi keyboard iii script for Monome Grids
 
 ## TODO
 
-* [ ] Replace all instances of `<script name>` in .vscode/tasks.json with the name of your script
+* [ ] Replace all instances of `<script name>` in .vscode/tasks.json with the name of your script.
+* [ ] Document how to use the script in `manual.md`.
 
 ## Idea Brainstorm
 
@@ -20,8 +21,6 @@ A usb midi keyboard iii script for Monome Grids
 * A One or Zero grid with >=[250114](https://github.com/monome/iii/releases/tag/250114) or newer iii firmware.
   
 *iii [Grid Compatibility](https://github.com/monome/iii?tab=readme-ov-file#compatibility) varies*
-
-Follow `diii` install steps from the [monome iii repo](https://github.com/monome/iii?tab=readme-ov-file#diii)
 
 ## First Time Setup
 
