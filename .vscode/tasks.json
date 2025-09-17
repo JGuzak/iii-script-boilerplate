@@ -2,6 +2,24 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Flash <script name>",
+      "type": "shell",
+      "windows": {
+        "command": ".\\.venv\\Scripts\\Activate.ps1; diii upload <script name>.lua"
+      },
+      "osx": {
+        "command": "source .venv/bin/activate && diii upload <script name>.lua"
+      },
+      "linux": {
+        "command": "source .venv/bin/activate && diii upload <script name>.lua"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
       "label": "Setup Environment",
       "type": "shell",
       "windows": {
@@ -53,24 +71,6 @@
       "group": {
         "kind": "build",
         "isDefault": false
-      }
-    },
-    {
-      "label": "Flash iiiano",
-      "type": "shell",
-      "windows": {
-        "command": ".\\.venv\\Scripts\\Activate.ps1; diii upload iiiano.lua"
-      },
-      "osx": {
-        "command": "source .venv/bin/activate && diii"
-      },
-      "linux": {
-        "command": "source .venv/bin/activate && diii"
-      },
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
       }
     },
     {
