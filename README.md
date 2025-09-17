@@ -11,7 +11,7 @@ A boilerplate iii script for Monome Grids
 ## TODO
 
 * [ ] Replace all instances of `<script name>` in .vscode/tasks.json with the name of your script.
-* [ ] Update issues link at the bottom of the troubleshooting section to match your repos issue tracker.
+* [ ] Update issues link at the bottom of the [troubleshooting](#troubleshooting) section to match your repos issue tracker.
 * [ ] Document how to use the script in `manual.md`.
 
 ## Idea Brainstorm
