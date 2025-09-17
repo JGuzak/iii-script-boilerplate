@@ -1,0 +1,6 @@
+requests==2.32.3
+
+monome-diii==1.0.2
+setuptools==65.5.0
+setuptools-scm==7.1.0
+setuptools-scm-git-archive==1.4

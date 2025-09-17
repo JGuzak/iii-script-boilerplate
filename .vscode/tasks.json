@@ -1,0 +1,95 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Setup Environment",
+      "type": "shell",
+      "windows": {
+        "command": ".\\scripts\\setup.ps1"
+      },
+      "linux": {
+        "command": "source scripts/setup"
+      },
+      "osx": {
+        "command": "source scripts/setup"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Clear Environment",
+      "type": "shell",
+      "windows": {
+        "command": "rmdir .venv -r -Force"
+      },
+      "linux": {
+        "command": "rm -rf .venv"
+      },
+      "osx": {
+        "command": "rm -rf .venv"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Launch diii",
+      "type": "shell",
+      "windows": {
+        "command": ".\\.venv\\Scripts\\Activate.ps1; diii"
+      },
+      "osx": {
+        "command": "source .venv/bin/activate && diii"
+      },
+      "linux": {
+        "command": "source .venv/bin/activate && diii"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Flash iiiano",
+      "type": "shell",
+      "windows": {
+        "command": ".\\.venv\\Scripts\\Activate.ps1; diii upload iiiano.lua"
+      },
+      "osx": {
+        "command": "source .venv/bin/activate && diii"
+      },
+      "linux": {
+        "command": "source .venv/bin/activate && diii"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Lock Dependencies",
+      "type": "shell",
+      "windows": {
+        "command": ".\\.venv\\Scripts\\Activate.ps1; pip freeze > requirements.txt"
+      },
+      "osx": {
+        "command": "source .venv/bin/activate && pip freeze > requirements.txt"
+      },
+      "linux": {
+        "command": "source .venv/bin/activate && pip freeze > requirements.txt"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      }
+    }
+  ]
+}
