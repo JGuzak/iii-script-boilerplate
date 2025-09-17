@@ -10,9 +10,13 @@ A boilerplate iii script for Monome Grids
 
 ## TODO
 
+* [ ] Update project description
 * [ ] Replace all instances of `<script name>` in .vscode/tasks.json with the name of your script.
 * [ ] Update issues link at the bottom of the [troubleshooting](#troubleshooting) section to match your repos issue tracker.
-* [ ] Document how to use the script in `manual.md`.
+* [ ] Documentation
+  * [ ] Fill out the `manual.md`
+  * [ ] Create images and embed them in the manual. Generating grid diagrams can be done with [Grid Station by Tyler Etters](https://tyleretters.github.io/GridStation/) and cleanly scaling these diagrams can be done with the help of [Grid Station Image Processor](https://github.com/JGuzak/Grid-Station-Image-Processor)
+  * [ ] consider generating a pdf version of the manual using
 
 ## Idea Brainstorm
 
